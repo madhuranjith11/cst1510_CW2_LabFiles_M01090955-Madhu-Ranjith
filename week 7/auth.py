@@ -101,5 +101,109 @@ def login_user(username, password):
 
     return False
 
+def validate_username(name):
+    if not name:
+        return False, "Username cannot be empty"
+    if len(name) < 3 or len(name) > 20:
+        return False, "Username must be 3-20 characters"
+    if " " in name:
+        return False, "Username cannot contain spaces"
+    if not re.match("^[A-Za-z0-9_]+$", name):
+        return False, "Only letters, numbers, underscores allowed"
+    return True, ""
 
+
+def validate_password(pw):
+    if len(pw) < 6 or len(pw) > 50:
+        return False, "Password must be 6-50 characters"
+    if not re.search(r"[A-Z]", pw):
+        return False, "Missing uppercase letter"
+    if not re.search(r"[a-z]", pw):
+        return False, "Missing lowercase letter"
+    if not re.search(r"[0-9]", pw):
+        return False, "Missing number"
+    if not re.search(r"[!@#$%^&*(),.?\":{}|<>]", pw):
+        return False, "Missing special char"
+    return True, ""
+
+
+def check_password_strength(pw):
+    s = 0
+    if len(pw) >= 8: s += 1
+    if re.search(r"[A-Z]", pw): s += 1
+    if re.search(r"[a-z]", pw): s += 1
+    if re.search(r"[0-9]", pw): s += 1
+    if re.search(r"[!@#$%^&*(),.?\":{}|<>]", pw): s += 1
+
+    return "Weak" if s <= 2 else "Medium" if s <= 4 else "Strong"
+
+
+def display_menu():
+    print("\n" + "=" * 50)
+    print("   MULTI-DOMAIN INTELLIGENCE PLATFORM")
+    print("              Authentication")
+    print("=" * 50)
+    print("[1] Register")
+    print("[2] Login")
+    print("[3] Exit")
+    print("-" * 50)
+
+def main():
+    print("\nWelcome to the Week 7 Authentication System!")
+
+    run = True
+    while run:
+        display_menu()
+        choice = input("\nSelect option: ").strip()
+
+        if choice == "1":
+            print("\n--- NEW USER ---")
+            uname = input("Username: ").strip()
+            ok, msg = validate_username(uname)
+            if not ok:
+                print("Error:", msg)
+                continue
+
+            pw = input("Password: ").strip()
+            ok, msg = validate_password(pw)
+            if not ok:
+                print("Error:", msg)
+                continue
+
+            print("Password Strength:", check_password_strength(pw))
+
+            confirm = input("Confirm password: ").strip()
+            if pw != confirm:
+                print("Passwords do not match.")
+                continue
+
+            role = input("Role (user/admin/analyst): ").strip().lower()
+            if role not in ["user", "admin", "analyst"]:
+                role = "user"
+
+            register_user(uname, pw, role)
+            print("User registered successfully.")
+
+        elif choice == "2":
+            print("\n--- LOGIN ---")
+            uname = input("Username: ").strip()
+            pw = input("Password: ").strip()
+
+            if login_user(uname, pw):
+                sess = create_session(uname)
+                print("Login successful.")
+                print("Session token:", sess)
+                input("Press Enter to continue...")
+            else:
+                print("Invalid login.")
+                input("Press Enter to continue...")
+
+        elif choice == "3":
+            print("\nExiting system...")
+            run = False
+
+        else:
+            print("Invalid option.")
+            
+main()
 
