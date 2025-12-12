@@ -133,3 +133,43 @@ def get_user_info(username):
             'created_at': user[4] if len(user) > 4 else None
         }
     return None
+
+
+def change_password(username, old_password, new_password):
+    """
+    Change user's password.
+    
+    Args:
+        username: User's login name
+        old_password: Current password for verification
+        new_password: New password to set
+        
+    Returns:
+        tuple: (success: bool, message: str)
+    """
+    # First verify old password
+    success, msg = login_user(username, old_password)
+    if not success:
+        return False, "Current password is incorrect."
+    
+    # Hash new password
+    password_bytes = new_password.encode('utf-8')
+    salt = bcrypt.gensalt()
+    hashed = bcrypt.hashpw(password_bytes, salt)
+    new_hash = hashed.decode('utf-8')
+    
+    # Update password in database
+    conn = connect_database()
+    cursor = conn.cursor()
+    
+    try:
+        cursor.execute(
+            "UPDATE users SET password_hash = ? WHERE username = ?",
+            (new_hash, username)
+        )
+        conn.commit()
+        conn.close()
+        return True, "Password changed successfully!"
+    except Exception as e:
+        conn.close()
+        return False,  f"Error changing password: {e}"
