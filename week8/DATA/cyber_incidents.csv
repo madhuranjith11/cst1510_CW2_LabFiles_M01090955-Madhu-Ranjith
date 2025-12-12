@@ -1,0 +1,51 @@
+date,incident_type,severity,status,description,reported_by
+2024-01-15,Phishing,High,Resolved,Phishing email campaign targeting finance department,alice
+2024-01-18,Malware,Critical,Investigating,Ransomware detected on file server,bob
+2024-01-20,DDoS,Medium,Open,Distributed denial of service attack on web server,alice
+2024-01-22,Data Breach,Critical,Resolved,Unauthorized access to customer database,charlie
+2024-01-25,Insider Threat,High,Investigating,Suspicious data exfiltration detected,alice
+2024-02-01,Phishing,Medium,Closed,Attempted phishing via fake Microsoft login page,bob
+2024-02-03,Malware,High,Resolved,Trojan horse detected in email attachment,alice
+2024-02-05,Unauthorized Access,Critical,Open,Multiple failed login attempts from foreign IP,charlie
+2024-02-08,Social Engineering,Medium,Investigating,Employee manipulated into revealing credentials,bob
+2024-02-10,SQL Injection,High,Resolved,SQL injection attempt on customer portal,alice
+2024-02-12,Zero-Day Exploit,Critical,Investigating,Unpatched vulnerability exploited in web application,charlie
+2024-02-15,Password Attack,Medium,Closed,Brute force attack on admin accounts,bob
+2024-02-18,Phishing,Low,Resolved,Generic phishing email with spelling errors,alice
+2024-02-20,Malware,High,Open,Spyware detected on executive laptop,charlie
+2024-02-22,DDoS,Critical,Investigating,Large-scale DDoS attack affecting multiple services,alice
+2024-03-01,Data Breach,High,Resolved,Employee personal data exposed due to misconfiguration,bob
+2024-03-05,Phishing,Medium,Closed,Spear phishing targeting HR department,alice
+2024-03-08,Ransomware,Critical,Investigating,Ransomware encrypted backup servers,charlie
+2024-03-10,Insider Threat,High,Open,Former employee accessed systems after termination,alice
+2024-03-12,Man-in-the-Middle,Medium,Resolved,MITM attack on internal network traffic,bob
+2024-03-15,Phishing,High,Investigating,CEO fraud attempt via email impersonation,charlie
+2024-03-18,Malware,Critical,Open,Advanced persistent threat detected,alice
+2024-03-20,Unauthorized Access,High,Resolved,Compromised admin credentials used for access,bob
+2024-03-22,Social Engineering,Medium,Closed,Vishing attack targeting IT helpdesk,alice
+2024-03-25,Cross-Site Scripting,Low,Resolved,XSS vulnerability in customer feedback form,charlie
+2024-04-01,Phishing,High,Open,Phishing campaign mimicking internal IT support,alice
+2024-04-03,Malware,Critical,Investigating,Cryptominer malware consuming server resources,bob
+2024-04-05,DDoS,Medium,Resolved,DDoS attack mitigated by CDN,alice
+2024-04-08,Data Breach,Critical,Open,Third-party vendor data breach affecting our data,charlie
+2024-04-10,Password Attack,High,Investigating,Credential stuffing attack using leaked passwords,alice
+2024-04-12,Phishing,Medium,Closed,Fake invoice phishing emails,bob
+2024-04-15,Malware,High,Resolved,Botnet activity detected on network,alice
+2024-04-18,Insider Threat,Critical,Investigating,Employee downloading sensitive files before resignation,charlie
+2024-04-20,SQL Injection,Medium,Resolved,Automated SQL injection scanning detected,bob
+2024-04-22,Phishing,Low,Closed,Mass phishing campaign easily identified,alice
+2024-05-01,Zero-Day Exploit,Critical,Open,Critical vulnerability in production software,charlie
+2024-05-05,Unauthorized Access,High,Investigating,Unauthorized API access from unknown source,alice
+2024-05-08,Social Engineering,Medium,Resolved,Pretexting attack on customer service,bob
+2024-05-10,Phishing,High,Open,Business email compromise targeting CFO,alice
+2024-05-12,Malware,Critical,Investigating,Fileless malware using PowerShell detected,charlie
+2024-05-15,DDoS,High,Resolved,Volumetric DDoS attack on DNS servers,alice
+2024-05-18,Data Breach,Medium,Closed,Minor data exposure through public API,bob
+2024-05-20,Ransomware,Critical,Open,Double extortion ransomware attack,charlie
+2024-05-22,Password Attack,High,Investigating,Password spraying attack on Office 365,alice
+2024-05-25,Phishing,Medium,Resolved,Fake shipping notification phishing emails,bob
+2024-06-01,Malware,High,Closed,Adware removed from employee workstations,alice
+2024-06-05,Insider Threat,Critical,Investigating,Suspicious data access patterns detected,charlie
+2024-06-08,Cross-Site Scripting,Low,Resolved,Stored XSS vulnerability patched,bob
+2024-06-10,Phishing,High,Open,Targeted spear phishing on executives,alice
+2024-06-12,Malware,Critical,Investigating,Rootkit discovered on critical server,charlie

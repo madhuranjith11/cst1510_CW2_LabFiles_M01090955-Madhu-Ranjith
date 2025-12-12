@@ -1,0 +1,51 @@
+ticket_id,priority,status,category,subject,description,created_date,resolved_date,assigned_to
+TKT-2024-0001,High,Resolved,Hardware,Laptop Screen Flickering,User reports intermittent screen flickering on Dell laptop,2024-01-15,2024-01-16,david
+TKT-2024-0002,Critical,Resolved,Network,Internet Connectivity Down,Entire office floor has no internet access,2024-01-15,2024-01-15,eve
+TKT-2024-0003,Medium,Closed,Software,MS Office Not Activating,Microsoft Office showing activation error,2024-01-16,2024-01-17,david
+TKT-2024-0004,Low,Resolved,Access,VPN Connection Issues,User unable to connect to company VPN from home,2024-01-17,2024-01-18,eve
+TKT-2024-0005,High,Resolved,Hardware,Printer Not Working,Department printer showing error code,2024-01-18,2024-01-19,david
+TKT-2024-0006,Medium,Closed,Software,Email Sync Problems,Outlook not syncing emails properly,2024-01-19,2024-01-20,eve
+TKT-2024-0007,Critical,Resolved,Network,Server Room Temperature Alert,Air conditioning failure in server room,2024-01-20,2024-01-20,david
+TKT-2024-0008,Low,Resolved,Access,Password Reset Request,User forgot domain password,2024-01-22,2024-01-22,eve
+TKT-2024-0009,High,Resolved,Hardware,Desktop Won't Boot,Computer showing blue screen on startup,2024-01-23,2024-01-24,david
+TKT-2024-0010,Medium,Closed,Software,Adobe Creative Cloud Error,License validation error for Adobe products,2024-01-24,2024-01-25,eve
+TKT-2024-0011,Critical,Resolved,Database,Database Performance Issues,ERP database running extremely slow,2024-01-25,2024-01-26,david
+TKT-2024-0012,Low,Resolved,Access,Shared Drive Access Request,New employee needs access to department folder,2024-01-26,2024-01-26,eve
+TKT-2024-0013,High,Resolved,Network,Wi-Fi Signal Weak,Conference room has poor wireless connectivity,2024-01-28,2024-01-29,david
+TKT-2024-0014,Medium,Closed,Hardware,Keyboard Keys Not Working,Several keys on wireless keyboard not responding,2024-01-29,2024-01-30,eve
+TKT-2024-0015,Low,Resolved,Software,Chrome Browser Crashing,Google Chrome crashes when opening certain websites,2024-01-30,2024-01-31,david
+TKT-2024-0016,Critical,Resolved,Network,Email Server Down,Cannot send or receive emails company-wide,2024-02-01,2024-02-01,eve
+TKT-2024-0017,High,Resolved,Hardware,Monitor Display Issues,External monitor showing distorted colors,2024-02-02,2024-02-03,david
+TKT-2024-0018,Medium,Closed,Software,Zoom Audio Not Working,Microphone not working in Zoom meetings,2024-02-03,2024-02-04,eve
+TKT-2024-0019,Low,Resolved,Access,Mobile Device Setup,Help setting up company email on iPhone,2024-02-05,2024-02-05,david
+TKT-2024-0020,High,Resolved,Database,SQL Query Timeout,Critical reports failing due to database timeout,2024-02-06,2024-02-07,eve
+TKT-2024-0021,Critical,Resolved,Network,Firewall Configuration Error,New firewall rules blocking legitimate traffic,2024-02-08,2024-02-08,david
+TKT-2024-0022,Medium,Closed,Hardware,Laptop Battery Not Charging,Battery indicator shows plugged in but not charging,2024-02-09,2024-02-10,eve
+TKT-2024-0023,Low,Resolved,Software,Software Update Request,User requesting latest version of AutoCAD,2024-02-10,2024-02-12,david
+TKT-2024-0024,High,Resolved,Access,Account Locked Out,User account locked after multiple failed login attempts,2024-02-12,2024-02-12,eve
+TKT-2024-0025,Medium,Closed,Network,Slow File Transfer Speeds,Copying files to network drive very slow,2024-02-13,2024-02-14,david
+TKT-2024-0026,Critical,Resolved,Hardware,Server Disk Failure,RAID array showing disk failure warning,2024-02-15,2024-02-15,eve
+TKT-2024-0027,Low,Resolved,Software,PDF Files Won't Open,Adobe Reader showing error when opening PDFs,2024-02-16,2024-02-17,david
+TKT-2024-0028,High,Resolved,Network,VoIP Phone Not Working,Desk phone shows no dial tone,2024-02-18,2024-02-19,eve
+TKT-2024-0029,Medium,Closed,Hardware,Mouse Cursor Jumping,Wireless mouse cursor moving erratically,2024-02-20,2024-02-21,david
+TKT-2024-0030,Low,Resolved,Access,Distribution List Update,Add user to department email distribution list,2024-02-22,2024-02-22,eve
+TKT-2024-0031,High,Investigating,Software,Application Crashing,CRM application crashes when generating reports,2024-02-23,,david
+TKT-2024-0032,Critical,Open,Network,Network Switch Failure,Core network switch unresponsive,2024-02-24,,eve
+TKT-2024-0033,Medium,In Progress,Hardware,Laptop Overheating,Laptop getting extremely hot during use,2024-02-25,,david
+TKT-2024-0034,Low,Open,Software,Font Display Issues,Certain fonts not displaying correctly in documents,2024-02-26,,eve
+TKT-2024-0035,High,Investigating,Database,Backup Job Failing,Nightly database backup job failing consistently,2024-02-27,,david
+TKT-2024-0036,Medium,In Progress,Access,Two-Factor Authentication Setup,User needs help setting up 2FA for remote access,2024-02-28,,eve
+TKT-2024-0037,Critical,Open,Network,DDoS Attack Suspected,Unusual network traffic patterns detected,2024-03-01,,david
+TKT-2024-0038,High,Investigating,Hardware,SAN Storage Issues,Storage array showing performance degradation,2024-03-02,,eve
+TKT-2024-0039,Medium,In Progress,Software,License Renewal Needed,Software license expiring next week,2024-03-03,,david
+TKT-2024-0040,Low,Open,Access,Guest Wi-Fi Not Working,Visitors unable to connect to guest network,2024-03-04,,eve
+TKT-2024-0041,High,Investigating,Network,DNS Resolution Slow,Websites loading very slowly due to DNS issues,2024-03-05,,david
+TKT-2024-0042,Critical,Open,Database,Database Corruption Detected,Database integrity check found corruption,2024-03-06,,eve
+TKT-2024-0043,Medium,In Progress,Hardware,Webcam Not Detected,Built-in webcam not showing up in device manager,2024-03-07,,david
+TKT-2024-0044,Low,Open,Software,Spell Check Not Working,Word spell checker not highlighting errors,2024-03-08,,eve
+TKT-2024-0045,High,Investigating,Network,Load Balancer Issues,Web application intermittently unavailable,2024-03-09,,david
+TKT-2024-0046,Medium,In Progress,Access,Security Group Membership,User needs access to secure file repository,2024-03-10,,eve
+TKT-2024-0047,Critical,Open,Hardware,Power Supply Failure,Server showing power supply failure alert,2024-03-11,,david
+TKT-2024-0048,High,Investigating,Software,Data Export Error,Cannot export data from financial system,2024-03-12,,eve
+TKT-2024-0049,Medium,In Progress,Network,SSL Certificate Expiring,Website SSL certificate expires in 7 days,2024-03-13,,david
+TKT-2024-0050,Low,Open,Access,Shared Calendar Permissions,Need to grant calendar access to assistant,2024-03-14,,eve

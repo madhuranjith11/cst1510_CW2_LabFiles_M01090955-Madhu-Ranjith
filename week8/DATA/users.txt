@@ -1,0 +1,5 @@
+alice,$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5ztK6X0VqTdJm,analyst
+bob,$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW,user
+charlie,$2b$12$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi,admin
+david,$2b$12$5v8LnwDYnqM3z5xJn5LkbOQqWp8zP0YvT6X9dY2cQ1nR8kL9mP3yC,user
+eve,$2b$12$7k9LmNpRtQ8xZ4yV2nM6PuQqXp9zA1YwU8Y0eZ3dR2oS9lK0nQ4zD,analyst
