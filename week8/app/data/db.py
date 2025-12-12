@@ -1,10 +1,30 @@
 import sqlite3
 from pathlib import Path
 
-ROOT_PATH = Path(__file__).resolve().parents[2]
-STORE_PATH = ROOT_PATH / "DATA"
-DB_FILE = STORE_PATH / "intelligence_platform.db"
+# Database path
+DB_PATH = Path("DATA") / "intelligence_platform.db"
 
-def open_db():
-    STORE_PATH.mkdir(parents=True, exist_ok=True)
-    return sqlite3.connect(DB_FILE.as_posix())
+
+def connect_database(db_path=DB_PATH):
+    """
+    Connect to the SQLite database.
+    Creates the database file if it doesn't exist.
+    
+    Args:
+        db_path: Path to the database file
+        
+    Returns:
+        sqlite3.Connection: Database connection object
+    """
+    return sqlite3.connect(str(db_path))
+
+
+def close_database(conn):
+    """
+    Close database connection.
+    
+    Args:
+        conn: Database connection to close
+    """
+    if conn:
+        conn.close()`
