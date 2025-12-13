@@ -1,0 +1,7 @@
+streamlit==1.26.0
+plotly==5.16.1
+pandas==2.1.0
+numpy==1.26.0
+sqlite3
+python-dotenv==1.0.1
+openai==1.29.0
